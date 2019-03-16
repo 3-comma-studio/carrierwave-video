@@ -5,7 +5,7 @@ module CarrierWave
 
       def initialize(format, options)
         @format = format.to_s
-        @resolution = options[:resolution] || "640x360"
+        @resolution = options[:resolution]
         @custom = options[:custom]
         @callbacks = options[:callbacks] || {}
         @logger = options[:logger]
